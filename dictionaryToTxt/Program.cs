@@ -7,9 +7,13 @@ public class TextCreator
     {
         // Creates templates for dictionary and list from txt file which contains values
 
-        CreateTXT("\t\t\t{ \"\", \"", "\" },", "", "");
+        //CreateTXT("\t\t\t{ \"\", \"", "\" },", @"C:\Users\Даня\Desktop\Список номенклатуры из 1C.txt", @"C:\Users\Даня\Desktop\Номенклатура для словаря.txt");
 
-        CreateTXT("\t\t\t\"", "\",", "", "");
+        //CreateTXT("\t\t\t\"", "\",", @"C:\Users\Даня\Desktop\Список номенклатуры из 1C.txt", @"C:\Users\Даня\Desktop\Номенклатура для списка.txt");
+
+        CreateTXT("  \"\": \"", "\",", @"C:\Users\Даня\Desktop\Список номенклатуры из 1C.txt", @"C:\Users\Даня\Desktop\Номенклатура для словаря.txt");
+
+        CreateTXT("  \"", "\",", @"C:\Users\Даня\Desktop\Список номенклатуры из 1C.txt", @"C:\Users\Даня\Desktop\Номенклатура для списка.txt");
     }
 
     private static void CreateTXT(string before, string after, string inputPath, string outputPath)
